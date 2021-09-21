@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testing-1.0.dtd" >
+<suite name = "TestNG">
+    <test name ="test-1">
+        <classes>
+            <class name = "SmokeTests.SmokeTest1" />
+        </classes>
+    </test>
+
+    <test name ="test-2">
+        <classes>
+            <class name = "SmokeTests.SmokeTest2" />
+        </classes>
+    </test>
+</suite>

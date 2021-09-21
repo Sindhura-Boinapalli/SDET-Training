@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
+  <test thread-count="5" name="Sindhura1_Framework(failed)">
+    <classes>
+      <class name="SmokeTests.DemoQATest1">
+        <methods>
+          <include name="TC002"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="TC001"/>
+        </methods>
+      </class> <!-- SmokeTests.DemoQATest1 -->
+    </classes>
+  </test> <!-- Sindhura1_Framework(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->
