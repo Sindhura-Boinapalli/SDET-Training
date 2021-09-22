@@ -6,7 +6,7 @@ Feature: Creating Sanity Test for swagger petstore
     Given Im sending swaggerURI of application
     When Im setting the values for the parameters for new pet
     And Im passing endpoint for adding new pet
-    Then Im validating the status code as 200
+    Then Im validating the status code as 201
 
   @sanitytest
   @TC002
