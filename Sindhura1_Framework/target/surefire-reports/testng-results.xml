@@ -1,122 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="6102" started-at="2021-09-20T21:09:19 CDT" finished-at="2021-09-20T21:09:26 CDT">
+  <suite name="Surefire suite" duration-ms="5314" started-at="2021-09-22T20:14:57 CDT" finished-at="2021-09-22T20:15:02 CDT">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:SmokeTests.CucumberRunnerTest@1dfe2924]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="6102" started-at="2021-09-20T21:09:19 CDT" finished-at="2021-09-20T21:09:26 CDT">
+    <test name="Surefire test" duration-ms="5314" started-at="2021-09-22T20:14:57 CDT" finished-at="2021-09-22T20:15:02 CDT">
       <class name="GmailApp.GmailAPITest">
-        <test-method status="PASS" signature="gmailAPITest()[pri:0, instance:GmailApp.GmailAPITest@35d176f7]" name="gmailAPITest" duration-ms="3006" started-at="2021-09-20T21:09:20 CDT" finished-at="2021-09-20T21:09:23 CDT">
+        <test-method status="PASS" signature="gmailAPITest()[pri:0, instance:GmailApp.GmailAPITest@35d176f7]" name="gmailAPITest" duration-ms="3331" started-at="2021-09-22T20:14:57 CDT" finished-at="2021-09-22T20:15:00 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gmailAPITest -->
       </class> <!-- GmailApp.GmailAPITest -->
       <class name="SmokeTests.CucumberRunnerTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:SmokeTests.CucumberRunnerTest@1dfe2924]" name="setUpClass" is-config="true" duration-ms="442" started-at="2021-09-20T21:09:23 CDT" finished-at="2021-09-20T21:09:23 CDT">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:SmokeTests.CucumberRunnerTest@1dfe2924]" name="setUpClass" is-config="true" duration-ms="480" started-at="2021-09-22T20:15:00 CDT" finished-at="2021-09-22T20:15:01 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:SmokeTests.CucumberRunnerTest@1dfe2924]" name="runScenario" duration-ms="538" started-at="2021-09-20T21:09:23 CDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-20T21:09:24 CDT">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:SmokeTests.CucumberRunnerTest@1dfe2924]" name="runScenario" duration-ms="655" started-at="2021-09-22T20:15:01 CDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-22T20:15:01 CDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Creating get call for Single user"]]>
+                <![CDATA["Creating post call for new pet"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Creating smoke test for reqres.in"]]>
+                <![CDATA["Creating Sanity Test for swagger petstore"]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [201] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [201] but found [200]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:839)
+at org.testng.Assert.assertEquals(Assert.java:849)
+at stepDefinitions.Swaggersteps.imValidatingTheStatusCodeAs(Swaggersteps.java:127)
+at ✽.Im validating the status code as 201(file:///C:/Sindhura1_Respository/SDET-Training/Sindhura1_Framework/src/main/resources/Features/Swagger.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:SmokeTests.CucumberRunnerTest@1dfe2924]" name="runScenario" duration-ms="156" started-at="2021-09-20T21:09:24 CDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-20T21:09:24 CDT">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:SmokeTests.CucumberRunnerTest@1dfe2924]" name="runScenario" duration-ms="399" started-at="2021-09-22T20:15:01 CDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-22T20:15:02 CDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Creating get call for List of users"]]>
+                <![CDATA["Creating post call for list of users"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Creating smoke test for reqres.in"]]>
+                <![CDATA["Creating Sanity Test for swagger petstore"]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [201] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [201] but found [200]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:839)
+at org.testng.Assert.assertEquals(Assert.java:849)
+at stepDefinitions.Swaggersteps.imValidatingTheStatusCodeAs(Swaggersteps.java:127)
+at ✽.Im validating the status code as 201(file:///C:/Sindhura1_Respository/SDET-Training/Sindhura1_Framework/src/main/resources/Features/Swagger.feature:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:SmokeTests.CucumberRunnerTest@1dfe2924]" name="runScenario" duration-ms="385" started-at="2021-09-20T21:09:24 CDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-20T21:09:24 CDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Creating Post call for Single user"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Creating smoke test for reqres.in"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:SmokeTests.CucumberRunnerTest@1dfe2924]" name="runScenario" duration-ms="390" started-at="2021-09-20T21:09:24 CDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-20T21:09:24 CDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Creating Post call for register"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Creating smoke test for reqres.in"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:SmokeTests.CucumberRunnerTest@1dfe2924]" name="runScenario" duration-ms="509" started-at="2021-09-20T21:09:24 CDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-20T21:09:25 CDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Creating put call for Single user"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Creating smoke test for reqres.in"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:SmokeTests.CucumberRunnerTest@1dfe2924]" name="runScenario" duration-ms="419" started-at="2021-09-20T21:09:25 CDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-20T21:09:25 CDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Creating delete call for Single user"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Creating smoke test for reqres.in"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:SmokeTests.CucumberRunnerTest@1dfe2924]" name="tearDownClass" is-config="true" duration-ms="191" started-at="2021-09-20T21:09:25 CDT" finished-at="2021-09-20T21:09:26 CDT">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:SmokeTests.CucumberRunnerTest@1dfe2924]" name="tearDownClass" is-config="true" duration-ms="362" started-at="2021-09-22T20:15:02 CDT" finished-at="2021-09-22T20:15:02 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

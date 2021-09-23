@@ -76,7 +76,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>Sindhura1</td>
                           <td>1</td>
-                        <td>20 Sep 2021, 21:09</td>
+                        <td>22 Sep 2021, 20:15</td>
           </tr>
         </tbody>
       </table>
@@ -123,17 +123,17 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@TC002</td>
-                    <td  class="passed"    >1</td>
-          <td >0</td>
+                    <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
-          <td      class="passed"    >4</td>
-          <td >0</td>
+          <td      class="passed"    >3</td>
+          <td      class="failed"    >1</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">4</td>
-          <td class="duration" data-value="153000000">153ms</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="388000000">388ms</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -152,21 +152,21 @@ $(document).ready(function() {
                   
 <div class="element">
       <div class="indention">
-      <a href="file-src-main-resources-Features-regressAPI-feature.html">View Feature</a> <i>Creating smoke test for reqres.in</i>
+      <a href="file-src-main-resources-Features-Swagger-feature.html">View Feature</a> <i>Creating Sanity Test for swagger petstore</i>
     </div>
   
   
 <div class="tags indention">
-       <a href="smoketest.html">@smoketest</a>
+       <a href="sanitytest.html">@sanitytest</a>
        <a href="TC002.html">@TC002</a>
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Creating get call for List of users</span>
+  <span class="name">Creating post call for list of users</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -175,15 +175,15 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -193,54 +193,12 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">Im sending baseURI of application</span>
-  
-  <span class="lead-duration duration">002ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">Im passing endpoint of list of user</span>
-  
-  <span class="lead-duration duration">148ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">I validate the status code as 200</span>
+  <span class="name">Im sending swaggerURI of application</span>
   
   <span class="lead-duration duration">000ms</span>
 
@@ -260,14 +218,75 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I validating for firstID as 7</span>
+  <span class="keyword indention">When</span>
+  <span class="name">Im setting the values for the parameters for list of users</span>
   
   <span class="lead-duration duration">003ms</span>
 
   </div>
 
         
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Im passing endpoint for list of users</span>
+  
+  <span class="lead-duration duration">385ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Im validating the status code as 201</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Error message</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: expected [201] but found [200]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:839)
+	at org.testng.Assert.assertEquals(Assert.java:849)
+	at stepDefinitions.Swaggersteps.imValidatingTheStatusCodeAs(Swaggersteps.java:127)
+	at ✽.Im validating the status code as 201(file:///C:/Sindhura1_Respository/SDET-Training/Sindhura1_Framework/src/main/resources/Features/Swagger.feature:17)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
         

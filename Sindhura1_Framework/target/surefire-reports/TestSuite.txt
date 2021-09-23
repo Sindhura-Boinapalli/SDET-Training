@@ -1,4 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.199 s - in TestSuite
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 7.249 s <<< FAILURE! - in TestSuite
+runScenario(SmokeTests.CucumberRunnerTest)  Time elapsed: 1.12 s  <<< FAILURE!
+java.lang.AssertionError: expected [201] but found [200]
+
+runScenario(SmokeTests.CucumberRunnerTest)  Time elapsed: 0.937 s  <<< FAILURE!
+java.lang.AssertionError: expected [201] but found [200]
+

@@ -3,78 +3,73 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-09-21T02:09:23.700Z",
+        "start_timestamp": "2021-09-23T01:15:01.507Z",
         "line": 5,
-        "name": "Creating get call for Single user",
+        "name": "Creating post call for new pet",
         "description": "",
-        "id": "creating-smoke-test-for-reqres.in;creating-get-call-for-single-user",
+        "id": "creating-sanity-test-for-swagger-petstore;creating-post-call-for-new-pet",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2000000,
+              "duration": 22000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "Im sending baseURI of application",
+            "name": "Im sending swaggerURI of application",
             "match": {
-              "location": "stepDefinitions.regressSteps.imSendingBaseURIOfApplication()"
+              "location": "stepDefinitions.Swaggersteps.imSendingSwaggerAPIOfApplication()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 222000000,
+              "duration": 7000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "Im passing endpoint of single user",
+            "name": "Im setting the values for the parameters for new pet",
             "match": {
-              "location": "stepDefinitions.regressSteps.imPassingEndpointOfSingleUser()"
+              "location": "stepDefinitions.Swaggersteps.imSettingTheValuesForTheParametersForNewPet()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 5000000,
+              "duration": 397000000,
               "status": "passed"
             },
             "line": 8,
-            "name": "I validate the status code as 200",
+            "name": "Im passing endpoint for adding new pet",
             "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 30
-                }
-              ],
-              "location": "stepDefinitions.regressSteps.iValidateTheStatusCode(int)"
+              "location": "stepDefinitions.Swaggersteps.imPassingEndpointForAddingNewPet()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 92000000,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: expected [201] but found [200]\r\n\tat org.testng.Assert.fail(Assert.java:97)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:136)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:839)\r\n\tat org.testng.Assert.assertEquals(Assert.java:849)\r\n\tat stepDefinitions.Swaggersteps.imValidatingTheStatusCodeAs(Swaggersteps.java:127)\r\n\tat ✽.Im validating the status code as 201(file:///C:/Sindhura1_Respository/SDET-Training/Sindhura1_Framework/src/main/resources/Features/Swagger.feature:9)\r\n",
+              "duration": 7000000,
+              "status": "failed"
             },
             "line": 9,
-            "name": "I validate for firstname as Janet",
+            "name": "Im validating the status code as 201",
             "match": {
               "arguments": [
                 {
-                  "val": "Janet",
-                  "offset": 28
+                  "val": "201",
+                  "offset": 33
                 }
               ],
-              "location": "stepDefinitions.regressSteps.iValidateForFirstname(java.lang.String)"
+              "location": "stepDefinitions.Swaggersteps.imValidatingTheStatusCodeAs(int)"
             },
-            "keyword": "And "
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@smoketest"
+            "name": "@sanitytest"
           },
           {
             "name": "@TC001"
@@ -82,363 +77,83 @@
         ]
       },
       {
-        "start_timestamp": "2021-09-21T02:09:24.035Z",
+        "start_timestamp": "2021-09-23T01:15:01.994Z",
         "line": 13,
-        "name": "Creating get call for List of users",
+        "name": "Creating post call for list of users",
         "description": "",
-        "id": "creating-smoke-test-for-reqres.in;creating-get-call-for-list-of-users",
+        "id": "creating-sanity-test-for-swagger-petstore;creating-post-call-for-list-of-users",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2000000,
               "status": "passed"
             },
             "line": 14,
-            "name": "Im sending baseURI of application",
+            "name": "Im sending swaggerURI of application",
             "match": {
-              "location": "stepDefinitions.regressSteps.imSendingBaseURIOfApplication()"
+              "location": "stepDefinitions.Swaggersteps.imSendingSwaggerAPIOfApplication()"
             },
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 148000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "Im passing endpoint of list of user",
-            "match": {
-              "location": "stepDefinitions.regressSteps.imPassingEndpointOfListOfUser()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "I validate the status code as 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 30
-                }
-              ],
-              "location": "stepDefinitions.regressSteps.iValidateTheStatusCode(int)"
-            },
-            "keyword": "Then "
           },
           {
             "result": {
               "duration": 3000000,
               "status": "passed"
             },
-            "line": 18,
-            "name": "I validating for firstID as 7",
+            "line": 15,
+            "name": "Im setting the values for the parameters for list of users",
+            "match": {
+              "location": "stepDefinitions.Swaggersteps.imSettingTheValuesForTheParametersForListOfUsers()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 385000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Im passing endpoint for list of users",
+            "match": {
+              "location": "stepDefinitions.Swaggersteps.imPassingEndpointForListOfUsers()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [201] but found [200]\r\n\tat org.testng.Assert.fail(Assert.java:97)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:136)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:839)\r\n\tat org.testng.Assert.assertEquals(Assert.java:849)\r\n\tat stepDefinitions.Swaggersteps.imValidatingTheStatusCodeAs(Swaggersteps.java:127)\r\n\tat ✽.Im validating the status code as 201(file:///C:/Sindhura1_Respository/SDET-Training/Sindhura1_Framework/src/main/resources/Features/Swagger.feature:17)\r\n",
+              "status": "failed"
+            },
+            "line": 17,
+            "name": "Im validating the status code as 201",
             "match": {
               "arguments": [
                 {
-                  "val": "7",
-                  "offset": 28
+                  "val": "201",
+                  "offset": 33
                 }
               ],
-              "location": "stepDefinitions.regressSteps.iValidatingForFirstIDAs(int)"
+              "location": "stepDefinitions.Swaggersteps.imValidatingTheStatusCodeAs(int)"
             },
-            "keyword": "And "
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@smoketest"
+            "name": "@sanitytest"
           },
           {
             "name": "@TC002"
           }
         ]
-      },
-      {
-        "start_timestamp": "2021-09-21T02:09:24.199Z",
-        "line": 22,
-        "name": "Creating Post call for Single user",
-        "description": "",
-        "id": "creating-smoke-test-for-reqres.in;creating-post-call-for-single-user",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "Im sending baseURI of application",
-            "match": {
-              "location": "stepDefinitions.regressSteps.imSendingBaseURIOfApplication()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 373000000,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "Im passing endpoint of post call for single user",
-            "match": {
-              "location": "stepDefinitions.regressSteps.imPassingEndpointOfPostCallForSingleUser()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "I validate the status code as 201",
-            "match": {
-              "arguments": [
-                {
-                  "val": "201",
-                  "offset": 30
-                }
-              ],
-              "location": "stepDefinitions.regressSteps.iValidateTheStatusCode(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "I validate for namevalue as morpheus",
-            "match": {
-              "arguments": [
-                {
-                  "val": "morpheus",
-                  "offset": 28
-                }
-              ],
-              "location": "stepDefinitions.regressSteps.iValidateForNamevalueAs(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoketest"
-          },
-          {
-            "name": "@TC003"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-09-21T02:09:24.578Z",
-        "line": 30,
-        "name": "Creating Post call for register",
-        "description": "",
-        "id": "creating-smoke-test-for-reqres.in;creating-post-call-for-register",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "Im sending baseURI of application",
-            "match": {
-              "location": "stepDefinitions.regressSteps.imSendingBaseURIOfApplication()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 384000000,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "Im passing endpoint of post call for register",
-            "match": {
-              "location": "stepDefinitions.regressSteps.imPassingEndpointOfPostCallForRegister()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "I validate the status code as 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 30
-                }
-              ],
-              "location": "stepDefinitions.regressSteps.iValidateTheStatusCode(int)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoketest"
-          },
-          {
-            "name": "@TC004"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-09-21T02:09:24.977Z",
-        "line": 37,
-        "name": "Creating put call for Single user",
-        "description": "",
-        "id": "creating-smoke-test-for-reqres.in;creating-put-call-for-single-user",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "Im sending baseURI of application",
-            "match": {
-              "location": "stepDefinitions.regressSteps.imSendingBaseURIOfApplication()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 493000000,
-              "status": "passed"
-            },
-            "line": 39,
-            "name": "Im passing endpoint of put call for single user",
-            "match": {
-              "location": "stepDefinitions.regressSteps.imPassingEndpointOfPutCallForSingleUser()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "I validate the status code as 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 30
-                }
-              ],
-              "location": "stepDefinitions.regressSteps.iValidateTheStatusCode(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "I validate for jobvalue as zion resident",
-            "match": {
-              "arguments": [
-                {
-                  "val": "zion resident",
-                  "offset": 27
-                }
-              ],
-              "location": "stepDefinitions.regressSteps.iValidateForJobvalueAs(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoketest"
-          },
-          {
-            "name": "@TC005"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-09-21T02:09:25.478Z",
-        "line": 45,
-        "name": "Creating delete call for Single user",
-        "description": "",
-        "id": "creating-smoke-test-for-reqres.in;creating-delete-call-for-single-user",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "line": 46,
-            "name": "Im sending baseURI of application",
-            "match": {
-              "location": "stepDefinitions.regressSteps.imSendingBaseURIOfApplication()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 414000000,
-              "status": "passed"
-            },
-            "line": 47,
-            "name": "Im passing endpoint of delete call for single user",
-            "match": {
-              "location": "stepDefinitions.regressSteps.imPassingEndpointOfDeleteCallForSingleUser()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 48,
-            "name": "I validate the status code as 204",
-            "match": {
-              "arguments": [
-                {
-                  "val": "204",
-                  "offset": 30
-                }
-              ],
-              "location": "stepDefinitions.regressSteps.iValidateTheStatusCode(int)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoketest"
-          },
-          {
-            "name": "@TC006"
-          }
-        ]
       }
     ],
-    "name": "Creating smoke test for reqres.in",
+    "name": "Creating Sanity Test for swagger petstore",
     "description": "",
-    "id": "creating-smoke-test-for-reqres.in",
+    "id": "creating-sanity-test-for-swagger-petstore",
     "keyword": "Feature",
-    "uri": "file:src/main/resources/Features/regressAPI.feature",
+    "uri": "file:src/main/resources/Features/Swagger.feature",
     "tags": []
   }
 ]

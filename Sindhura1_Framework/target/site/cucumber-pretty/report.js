@@ -1,16 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/main/resources/Features/regressAPI.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/main/resources/Features/Swagger.feature");
 formatter.feature({
-  "name": "Creating smoke test for reqres.in",
+  "name": "Creating Sanity Test for swagger petstore",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Creating get call for Single user",
+  "name": "Creating post call for new pet",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@smoketest"
+      "name": "@sanitytest"
     },
     {
       "name": "@TC001"
@@ -18,52 +18,53 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "Im sending baseURI of application",
+  "name": "Im sending swaggerURI of application",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepDefinitions.regressSteps.imSendingBaseURIOfApplication()"
+  "location": "stepDefinitions.Swaggersteps.imSendingSwaggerAPIOfApplication()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Im passing endpoint of single user",
+  "name": "Im setting the values for the parameters for new pet",
   "keyword": "When "
 });
 formatter.match({
-  "location": "stepDefinitions.regressSteps.imPassingEndpointOfSingleUser()"
+  "location": "stepDefinitions.Swaggersteps.imSettingTheValuesForTheParametersForNewPet()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I validate the status code as 200",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepDefinitions.regressSteps.iValidateTheStatusCode(int)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I validate for firstname as Janet",
+  "name": "Im passing endpoint for adding new pet",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepDefinitions.regressSteps.iValidateForFirstname(java.lang.String)"
+  "location": "stepDefinitions.Swaggersteps.imPassingEndpointForAddingNewPet()"
 });
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "Im validating the status code as 201",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepDefinitions.Swaggersteps.imValidatingTheStatusCodeAs(int)"
+});
+formatter.result({
+  "error_message": "java.lang.AssertionError: expected [201] but found [200]\r\n\tat org.testng.Assert.fail(Assert.java:97)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:136)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:839)\r\n\tat org.testng.Assert.assertEquals(Assert.java:849)\r\n\tat stepDefinitions.Swaggersteps.imValidatingTheStatusCodeAs(Swaggersteps.java:127)\r\n\tat ✽.Im validating the status code as 201(file:///C:/Sindhura1_Respository/SDET-Training/Sindhura1_Framework/src/main/resources/Features/Swagger.feature:9)\r\n",
+  "status": "failed"
+});
 formatter.scenario({
-  "name": "Creating get call for List of users",
+  "name": "Creating post call for list of users",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@smoketest"
+      "name": "@sanitytest"
     },
     {
       "name": "@TC002"
@@ -71,235 +72,44 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "Im sending baseURI of application",
+  "name": "Im sending swaggerURI of application",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepDefinitions.regressSteps.imSendingBaseURIOfApplication()"
+  "location": "stepDefinitions.Swaggersteps.imSendingSwaggerAPIOfApplication()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Im passing endpoint of list of user",
+  "name": "Im setting the values for the parameters for list of users",
   "keyword": "When "
 });
 formatter.match({
-  "location": "stepDefinitions.regressSteps.imPassingEndpointOfListOfUser()"
+  "location": "stepDefinitions.Swaggersteps.imSettingTheValuesForTheParametersForListOfUsers()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I validate the status code as 200",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepDefinitions.regressSteps.iValidateTheStatusCode(int)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I validating for firstID as 7",
+  "name": "Im passing endpoint for list of users",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepDefinitions.regressSteps.iValidatingForFirstIDAs(int)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Creating Post call for Single user",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@smoketest"
-    },
-    {
-      "name": "@TC003"
-    }
-  ]
-});
-formatter.step({
-  "name": "Im sending baseURI of application",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "stepDefinitions.regressSteps.imSendingBaseURIOfApplication()"
+  "location": "stepDefinitions.Swaggersteps.imPassingEndpointForListOfUsers()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Im passing endpoint of post call for single user",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "stepDefinitions.regressSteps.imPassingEndpointOfPostCallForSingleUser()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I validate the status code as 201",
+  "name": "Im validating the status code as 201",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepDefinitions.regressSteps.iValidateTheStatusCode(int)"
+  "location": "stepDefinitions.Swaggersteps.imValidatingTheStatusCodeAs(int)"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I validate for namevalue as morpheus",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepDefinitions.regressSteps.iValidateForNamevalueAs(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Creating Post call for register",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@smoketest"
-    },
-    {
-      "name": "@TC004"
-    }
-  ]
-});
-formatter.step({
-  "name": "Im sending baseURI of application",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "stepDefinitions.regressSteps.imSendingBaseURIOfApplication()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Im passing endpoint of post call for register",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "stepDefinitions.regressSteps.imPassingEndpointOfPostCallForRegister()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I validate the status code as 200",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepDefinitions.regressSteps.iValidateTheStatusCode(int)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Creating put call for Single user",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@smoketest"
-    },
-    {
-      "name": "@TC005"
-    }
-  ]
-});
-formatter.step({
-  "name": "Im sending baseURI of application",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "stepDefinitions.regressSteps.imSendingBaseURIOfApplication()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Im passing endpoint of put call for single user",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "stepDefinitions.regressSteps.imPassingEndpointOfPutCallForSingleUser()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I validate the status code as 200",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepDefinitions.regressSteps.iValidateTheStatusCode(int)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I validate for jobvalue as zion resident",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepDefinitions.regressSteps.iValidateForJobvalueAs(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Creating delete call for Single user",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@smoketest"
-    },
-    {
-      "name": "@TC006"
-    }
-  ]
-});
-formatter.step({
-  "name": "Im sending baseURI of application",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "stepDefinitions.regressSteps.imSendingBaseURIOfApplication()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Im passing endpoint of delete call for single user",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "stepDefinitions.regressSteps.imPassingEndpointOfDeleteCallForSingleUser()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I validate the status code as 204",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepDefinitions.regressSteps.iValidateTheStatusCode(int)"
-});
-formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.AssertionError: expected [201] but found [200]\r\n\tat org.testng.Assert.fail(Assert.java:97)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:136)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:839)\r\n\tat org.testng.Assert.assertEquals(Assert.java:849)\r\n\tat stepDefinitions.Swaggersteps.imValidatingTheStatusCodeAs(Swaggersteps.java:127)\r\n\tat ✽.Im validating the status code as 201(file:///C:/Sindhura1_Respository/SDET-Training/Sindhura1_Framework/src/main/resources/Features/Swagger.feature:17)\r\n",
+  "status": "failed"
 });
 });

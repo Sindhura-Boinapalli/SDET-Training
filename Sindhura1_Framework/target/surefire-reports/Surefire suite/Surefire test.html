@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 20 21:09:19 CDT 2021</td>
+<td>Started on:</td><td>Wed Sep 22 20:14:57 CDT 2021</td>
 </tr>
-<tr><td>Total time:</td><td>6 seconds (6102 ms)</td>
+<tr><td>Total time:</td><td>5 seconds (5314 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,48 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='SmokeTests.CucumberRunnerTest.runScenario()'><b>runScenario</b><br>Test class: SmokeTests.CucumberRunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Creating post call for new pet", "Creating Sanity Test for swagger petstore"</td>
+<td><div><pre>java.lang.AssertionError: expected [201] but found [200]
+	at stepDefinitions.Swaggersteps.imValidatingTheStatusCodeAs(Swaggersteps.java:127)
+	at ?.Im validating the status code as 201(file:///C:/Sindhura1_Respository/SDET-Training/Sindhura1_Framework/src/main/resources/Features/Swagger.feature:9)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace253027775", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace253027775'><pre>java.lang.AssertionError: expected [201] but found [200]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:839)
+	at org.testng.Assert.assertEquals(Assert.java:849)
+	at stepDefinitions.Swaggersteps.imValidatingTheStatusCodeAs(Swaggersteps.java:127)
+	at ?.Im validating the status code as 201(file:///C:/Sindhura1_Respository/SDET-Training/Sindhura1_Framework/src/main/resources/Features/Swagger.feature:9)
+</pre></div></td>
+<td>0</td>
+<td>SmokeTests.CucumberRunnerTest@1dfe2924</td></tr>
+<tr>
+<td title='SmokeTests.CucumberRunnerTest.runScenario()'><b>runScenario</b><br>Test class: SmokeTests.CucumberRunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Creating post call for list of users", "Creating Sanity Test for swagger petstore"</td>
+<td><div><pre>java.lang.AssertionError: expected [201] but found [200]
+	at stepDefinitions.Swaggersteps.imValidatingTheStatusCodeAs(Swaggersteps.java:127)
+	at ?.Im validating the status code as 201(file:///C:/Sindhura1_Respository/SDET-Training/Sindhura1_Framework/src/main/resources/Features/Swagger.feature:17)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1048903970", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1048903970'><pre>java.lang.AssertionError: expected [201] but found [200]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:839)
+	at org.testng.Assert.assertEquals(Assert.java:849)
+	at stepDefinitions.Swaggersteps.imValidatingTheStatusCodeAs(Swaggersteps.java:127)
+	at ?.Im validating the status code as 201(file:///C:/Sindhura1_Respository/SDET-Training/Sindhura1_Framework/src/main/resources/Features/Swagger.feature:17)
+</pre></div></td>
+<td>0</td>
+<td>SmokeTests.CucumberRunnerTest@1dfe2924</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -79,36 +121,6 @@ function toggleAllBoxes() {
 <td></td>
 <td>3</td>
 <td>GmailApp.GmailAPITest@35d176f7</td></tr>
-<tr>
-<td title='SmokeTests.CucumberRunnerTest.runScenario()'><b>runScenario</b><br>Test class: SmokeTests.CucumberRunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Creating get call for Single user", "Creating smoke test for reqres.in"</td>
-<td></td>
-<td>0</td>
-<td>SmokeTests.CucumberRunnerTest@1dfe2924</td></tr>
-<tr>
-<td title='SmokeTests.CucumberRunnerTest.runScenario()'><b>runScenario</b><br>Test class: SmokeTests.CucumberRunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Creating get call for List of users", "Creating smoke test for reqres.in"</td>
-<td></td>
-<td>0</td>
-<td>SmokeTests.CucumberRunnerTest@1dfe2924</td></tr>
-<tr>
-<td title='SmokeTests.CucumberRunnerTest.runScenario()'><b>runScenario</b><br>Test class: SmokeTests.CucumberRunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Creating Post call for Single user", "Creating smoke test for reqres.in"</td>
-<td></td>
-<td>0</td>
-<td>SmokeTests.CucumberRunnerTest@1dfe2924</td></tr>
-<tr>
-<td title='SmokeTests.CucumberRunnerTest.runScenario()'><b>runScenario</b><br>Test class: SmokeTests.CucumberRunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Creating Post call for register", "Creating smoke test for reqres.in"</td>
-<td></td>
-<td>0</td>
-<td>SmokeTests.CucumberRunnerTest@1dfe2924</td></tr>
-<tr>
-<td title='SmokeTests.CucumberRunnerTest.runScenario()'><b>runScenario</b><br>Test class: SmokeTests.CucumberRunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Creating put call for Single user", "Creating smoke test for reqres.in"</td>
-<td></td>
-<td>0</td>
-<td>SmokeTests.CucumberRunnerTest@1dfe2924</td></tr>
-<tr>
-<td title='SmokeTests.CucumberRunnerTest.runScenario()'><b>runScenario</b><br>Test class: SmokeTests.CucumberRunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Creating delete call for Single user", "Creating smoke test for reqres.in"</td>
-<td></td>
-<td>0</td>
-<td>SmokeTests.CucumberRunnerTest@1dfe2924</td></tr>
 </table><p>
 </body>
 </html>
