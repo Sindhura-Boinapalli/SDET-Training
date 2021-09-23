@@ -10,7 +10,7 @@ import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 
-public class GmailAPITest
+public class GmailAPITest1
 {
     String accesstoken = "Bearer ya29.a0ARrdaM9zsyhVj4D2-cSdKpG-mT1zkl4CtEd40odMorpbK6hRzLfFZ9LdhVRU1HcrUtRhryrTcVCMl1nXKkcv9s6Fnfequewy3N9pcDc9aitK8jV70qJAhRp8hS97CRL3wP35H_9FYcsSku50NsDlkLrEQor-";
 
